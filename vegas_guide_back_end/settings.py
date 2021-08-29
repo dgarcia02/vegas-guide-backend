@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-y2ri+q^uyjgao$h3xt_k#qe3bdnsq#d)01j3p_2_t!fq2yvute
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'git.heroku.com/sheltered-eyrie-81871.git']
+ALLOWED_HOSTS = ['localhost', 'git.heroku.com/sheltered-eyrie-81871.git, sheltered-eyrie-81871.herokuapp.com']
 
 
 # Application definition
