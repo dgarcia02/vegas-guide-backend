@@ -14,3 +14,7 @@ class Profile(models.Model):
     interest = ArrayField(models.CharField(max_length=25), blank=True)
     attended = ArrayField(models.CharField(max_length=50), blank=True)
     wishlist = ArrayField(models.CharField(max_length=50), blank=True)
+
+class UserAccount(models.Model):
+    username = models.CharField(max_length=1000, unique=True)
+    password = models.CharField(max_length=1000)
