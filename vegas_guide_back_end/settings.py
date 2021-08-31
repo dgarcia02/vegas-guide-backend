@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-y2ri+q^uyjgao$h3xt_k#qe3bdnsq#d)01j3p_2_t!fq2yvute
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'git.heroku.com/warm-reaches-90781.git', 'warm-reaches-90781.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', 'git.heroku.com/intense-mountain-41648.git', 'intense-mountain-41648.herokuapp.com']
 
 
 # Application definition
