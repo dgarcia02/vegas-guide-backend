@@ -7,7 +7,7 @@ from django.contrib.auth.hashers import make_password, check_password
 class ProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = Profile
-        fields = ('id', 'image', 'dob', 'email', 'phone', 'city', 'state', 'interest', 'attended', 'wishlist', 'first_name', 'gender', 'last_name',)
+        fields = ('id', 'first_name', 'last_name', 'email', 'image', 'gender', 'dob', 'phone', 'city', 'state', 'interest', 'attended', 'wishlist',)
 
 class UserAccountSerializer(serializers.ModelSerializer):
     class Meta:
