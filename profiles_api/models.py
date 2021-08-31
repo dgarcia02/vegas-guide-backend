@@ -4,13 +4,15 @@ from django.core.validators import EmailValidator, ValidationError
 
 # Create your models here.
 class Profile(models.Model):
-    name = models.CharField(max_length=32)
+    first_name = models.CharField(max_length=30, null=True)
+    last_name = models.CharField(max_length=30, null=True)
+    email = models.EmailField(max_length=255, unique=True)
     image = models.CharField(max_length=200)
+    gender = models.CharField(max_length=20, null=True)
     dob = models.DateField(max_length=8)
-    email = models.EmailField(max_length=254)
     phone = models.CharField(max_length=10)
     city = models.CharField(max_length=30)
-    state = models.CharField(max_length=30)
+    state = models.CharField(max_length=2)
     interest = ArrayField(models.CharField(max_length=25), blank=True)
     attended = ArrayField(models.CharField(max_length=50), blank=True)
     wishlist = ArrayField(models.CharField(max_length=50), blank=True)
@@ -18,3 +20,4 @@ class Profile(models.Model):
 class UserAccount(models.Model):
     username = models.CharField(max_length=1000, unique=True)
     password = models.CharField(max_length=1000)
+    is_active = models.BooleanField(default=True)
