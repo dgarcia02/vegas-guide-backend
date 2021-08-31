@@ -13,9 +13,6 @@ class Profile(models.Model):
     phone = models.CharField(max_length=10)
     city = models.CharField(max_length=30)
     state = models.CharField(max_length=2)
-    interest = ArrayField(models.CharField(max_length=25), blank=True)
-    attended = ArrayField(models.CharField(max_length=50), blank=True)
-    wishlist = ArrayField(models.CharField(max_length=50), blank=True)
 
 class UserAccount(models.Model):
     username = models.CharField(max_length=1000, unique=True)
